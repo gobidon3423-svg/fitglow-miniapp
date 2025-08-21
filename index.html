@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>FitGlow — миниапп</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
+  <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>FitGlow</h1>
+      <p class="subtitle">Тренировки и питание для девушек. Доступ к частному каналу на 30 дней.</p>
+    </header>
+
+    <section class="card">
+      <ul class="perks">
+        <li>Еженедельные планы тренировок</li>
+        <li>Рационы и рекомендации</li>
+        <li>Ответы от тренера в чате</li>
+      </ul>
+
+      <div class="price">49 ₽ / 30 дней</div>
+      <button id="payBtn">Оплатить 49 ₽</button>
+      <div id="status"></div>
+    </section>
+
+    <footer>
+      <small>После оплаты бот пришлёт уникальную ссылку-приглашение в канал (действует 24 часа).</small>
+    </footer>
+  </div>
+
+  <script src="./config.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
